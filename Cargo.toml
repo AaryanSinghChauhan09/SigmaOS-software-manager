@@ -1,0 +1,16 @@
+[package]
+name = "sigmaos-software-manager"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "GUI software manager with plugin backend architecture"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-software-manager"
+readme = "README.md"
+keywords = ["software", "package", "manager", "sigmaos"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+
+[profile.release]
+opt-level = 3

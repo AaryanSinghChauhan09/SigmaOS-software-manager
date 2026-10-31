@@ -1,15 +1,14 @@
-# SigmaOS-software-manager
+# SigmaOS Software Manager
 
-Part of the SigmaOS multi-repository architecture.
+This crate defines a package-backend interface and a manager that delegates
+search, install, and remove operations to registered backends. The manager
+starts with no backends. Its test-only `StubAptBackend` supplies sample data and
+does not call the system package manager, so test results do not demonstrate
+real package installation.
 
-## Principles
-- MODULARITY: Single responsibility per repository
-- LOOSE COUPLING: Minimal dependencies between repos
-- INTERFACE SEGREGATION: Clear, focused public APIs
-- DETERMINISTIC TESTING: Comprehensive test coverage
+Add and document a production backend, package trust checks, and transaction
+recovery before using this API to change a host.
 
 ## License
-SPDX-License-Identifier: GPL-3.0-or-later
 
-## Copyright
-Copyright (C) 2026 SigmaOS Project
+GPL-3.0-or-later. See [`LICENSE`](LICENSE) and [`Cargo.toml`](Cargo.toml).

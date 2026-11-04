@@ -130,7 +130,7 @@ impl DependencyResolver {
             }
         }
 
-        if !resolved.contains(package_name) {
+        if !resolved.iter().any(|s| s == package_name) {
             resolved.push(package_name.to_string());
         }
 

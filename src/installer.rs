@@ -1,7 +1,6 @@
 //! Package installation with transaction support
 //! Follows: Transaction Safety, Atomic Operations, Rollback
 
-use std::fs;
 use std::path::PathBuf;
 
 /// Installation transaction
@@ -12,7 +11,7 @@ pub struct InstallTransaction {
 }
 
 #[derive(Debug, Clone)]
-enum InstallStep {
+pub enum InstallStep {
     Download(String),
     Extract(PathBuf),
     Configure(PathBuf),

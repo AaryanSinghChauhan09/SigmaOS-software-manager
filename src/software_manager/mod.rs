@@ -2,8 +2,6 @@
 //! GNOME Software, KDE Discover, Omarchy ISO package tooling.
 //! Principles: Layered Design, Open-Closed, Plug-in Driver Model, DRY, KISS.
 
-use std::collections::HashMap;
-
 /// Package source backend (Plug-in Driver Model — new backends via trait impl).
 pub trait PackageBackend: Send + Sync {
     fn name(&self) -> &'static str;

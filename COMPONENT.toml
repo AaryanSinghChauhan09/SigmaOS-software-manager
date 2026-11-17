@@ -1,6 +1,6 @@
 [component]
 name = "SigmaOS-software-manager"
-description = "SigmaOS subsystem component for software-manager"
+description = "GUI/CLI software store (search, install, remove)"
 version = "0.1.0"
 tier = 5
 

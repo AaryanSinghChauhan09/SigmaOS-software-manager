@@ -9,6 +9,7 @@
 
 use std::fmt;
 use std::collections::BTreeMap;
+pub mod sigmasoftwaremanager;
 
 /// Errors for `RegistryError` operations. Fail-fast: invalid input is rejected.
 #[derive(Debug, Clone, PartialEq, Eq)]
